@@ -1,7 +1,8 @@
 Próbowałem skorzystać z funkcji do załadowania obrazów w typie lazy
 
 
-// <img data-src="img/ekipa/ekipa1.webp" loading="lazy" alt=".." class="lazyload"/>
+< img data-src="img/ekipa/ekipa1.webp" loading="lazy" alt=".." class="lazyload"/>
+ 
 i z skryptem js
 <script>
   if ('loading' in HTMLImageElement.prototype) {
