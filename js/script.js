@@ -9,7 +9,7 @@ let videoClick = document.querySelectorAll('.ti-chevron-right')
 let closeBtn = document.querySelector('.close')
 let list = document.querySelectorAll('.list')
 let itemBox = document.querySelectorAll('.itemBox')
-let Photo = document.querySelectorAll('.Photo')
+let photos = document.querySelectorAll('.Photo')
 
 for (let z = 0; z < itemBox.length; z++) {
 	if (itemBox[z].getAttribute('data-item') == 'photo') {
@@ -47,12 +47,11 @@ for (let g = 0; g < videoClick.length; g++) {
 	})
 }
 
-//MODAL Photo
-for (let a = 0; a < Photo.length; a++) {
-	Photo[a].addEventListener('click', function () {
+photos.forEach(photo => {
+	photo.addEventListener('click', function () {
 		modal.classList.add('active')
 	})
 	closeBtn.addEventListener('click', function () {
 		modal.classList.remove('active')
 	})
-}
+})
